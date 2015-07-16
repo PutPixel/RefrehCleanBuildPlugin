@@ -112,10 +112,9 @@ public class RefreshCleanBuildCommand extends AbstractHandler {
     }
 
     private boolean isErrorMarker(IMarker marker) {
-        Integer severityType;
         try {
-            severityType = (Integer) marker.getAttribute(IMarker.SEVERITY);
-            return severityType.intValue() == IMarker.SEVERITY_ERROR;
+            Integer severityType = (Integer) marker.getAttribute(IMarker.SEVERITY);
+            return severityType != null && severityType.intValue() == IMarker.SEVERITY_ERROR;
         } catch (CoreException e) {
             throw new RuntimeException(e);
         }

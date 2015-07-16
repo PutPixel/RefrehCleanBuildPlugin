@@ -45,14 +45,14 @@ public class RefreshCleanBuildCommand extends AbstractHandler {
 
                     boolean hasOtherProblems = wsHasProblemsThatCantBeSolvedByCleanRefresh(errorMarkers);
                     if (hasOtherProblems) {
-                        return new Status(IStatus.WARNING, Activator.PLUGIN_ID,
+                        return new Status(IStatus.ERROR, Activator.PLUGIN_ID,
                                 "Workspace has problems that can't be solved by clean-refresh", null);
                     }
 
                     monitor.worked(1);
                     i++;
                 }
-                return new Status(IStatus.WARNING, Activator.PLUGIN_ID,
+                return new Status(IStatus.ERROR, Activator.PLUGIN_ID,
                         "Workspace problems were not resolved within " + MAX_ATTEMPTS + " clean-refresh attempts", null);
             }
 

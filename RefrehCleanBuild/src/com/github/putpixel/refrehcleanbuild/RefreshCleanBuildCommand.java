@@ -16,7 +16,6 @@ import org.eclipse.core.runtime.CoreException;
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.core.runtime.IStatus;
 import org.eclipse.core.runtime.Status;
-import org.eclipse.core.runtime.SubProgressMonitor;
 import org.eclipse.core.runtime.jobs.Job;
 import org.eclipse.jdt.core.IJavaModelMarker;
 import org.eclipse.ui.progress.IProgressConstants2;
@@ -97,8 +96,7 @@ public class RefreshCleanBuildCommand extends AbstractHandler {
     private List<IMarker> getErrorMarkers() {
         IWorkspace workspace = ResourcesPlugin.getWorkspace();
         try {
-            return Arrays.asList(workspace.getRoot().findMarkers(
-                    IJavaModelMarker.JAVA_MODEL_PROBLEM_MARKER, true, IResource.DEPTH_INFINITE)).stream()
+            return Arrays.asList(workspace.getRoot().findMarkers(null, true, IResource.DEPTH_INFINITE)).stream()
                     .filter(m -> isErrorMarker(m))
                     .collect(Collectors.toList());
         } catch (CoreException e) {

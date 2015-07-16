@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            allPopups="false"
+            locationURI="toolbar:org.eclipse.ui.main.toolbar">
+         <toolbar
+               id="com.github.putpixel.refrehcleanbuild.run.btn"
+               label="Refreh Clean Build">
+            <command
+                  commandId="com.github.putpixel.refrehcleanbuild.run.btn.command"
+                  icon="icons/iconRCB16.png"
+                  label="Refreh Clean Build"
+                  style="push">
+            </command>
+            <command
+                  commandId="com.github.putpixel.refrehcleanbuild.run.btn.command"
+                  icon="icons/iconRC16.png"
+                  label="Refreh Clean"
+                  style="push">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+   <extension
+         point="org.eclipse.ui.commands">
+      <command
+            defaultHandler="com.github.putpixel.refrehcleanbuild.RefreshCleanBuildCommand"
+            id="com.github.putpixel.refrehcleanbuild.run.btn.command"
+            name="Refreh Clean Build">
+      </command>
+      <command
+            defaultHandler="com.github.putpixel.refrehcleanbuild.RefreshCleanCommand"
+            id="com.github.putpixel.refrehclean.run.btn.command"
+            name="Refreh Clean">
+      </command>
+   </extension>
+
+</plugin>

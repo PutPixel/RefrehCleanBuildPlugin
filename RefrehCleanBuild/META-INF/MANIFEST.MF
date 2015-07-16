@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RefrehCleanBuild
+Bundle-SymbolicName: com.github.putpixel.refrehcleanbuild;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: refrehcleanbuild.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.commands,
+ org.eclipse.ui.workbench,
+ org.eclipse.e4.ui.di,
+ org.eclipse.core.resources,
+ org.eclipse.jdt.core
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

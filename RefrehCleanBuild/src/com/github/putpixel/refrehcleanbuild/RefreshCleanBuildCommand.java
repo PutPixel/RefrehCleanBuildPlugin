@@ -27,7 +27,7 @@ public class RefreshCleanBuildCommand extends AbstractHandler {
 
     @Override
     public Object execute(ExecutionEvent event) throws ExecutionException {
-        Job job = new Job("Refresh Clean Build") {
+        Job job = new Job(getJobName()) {
 
             @Override
             protected IStatus run(IProgressMonitor monitor) {
@@ -60,6 +60,10 @@ public class RefreshCleanBuildCommand extends AbstractHandler {
         job.setProperty(IProgressConstants2.SHOW_IN_TASKBAR_ICON_PROPERTY, Boolean.TRUE);
         job.schedule();
         return "Done";
+    }
+
+    protected String getJobName() {
+        return "Refresh Clean Build";
     }
 
     private void refreshAll(IProgressMonitor monitor) {

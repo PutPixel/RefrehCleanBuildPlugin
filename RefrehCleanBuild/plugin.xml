@@ -12,13 +12,13 @@
             <command
                   commandId="com.github.putpixel.refrehcleanbuild.run.btn.command"
                   icon="icons/iconRCB16.png"
-                  label="Refreh Clean Build"
+                  label="Refresh Clean Build"
                   style="push">
             </command>
             <command
-                  commandId="com.github.putpixel.refrehcleanbuild.run.btn.command"
+                  commandId="com.github.putpixel.refrehclean.run.btn.command"
                   icon="icons/iconRC16.png"
-                  label="Refreh Clean"
+                  label="Refresh Clean"
                   style="push">
             </command>
          </toolbar>
@@ -29,12 +29,12 @@
       <command
             defaultHandler="com.github.putpixel.refrehcleanbuild.RefreshCleanBuildCommand"
             id="com.github.putpixel.refrehcleanbuild.run.btn.command"
-            name="Refreh Clean Build">
+            name="Refresh Clean Build">
       </command>
       <command
             defaultHandler="com.github.putpixel.refrehcleanbuild.RefreshCleanCommand"
             id="com.github.putpixel.refrehclean.run.btn.command"
-            name="Refreh Clean">
+            name="Refresh Clean">
       </command>
    </extension>
 

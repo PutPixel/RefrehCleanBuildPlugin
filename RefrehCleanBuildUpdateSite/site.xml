@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="RefrehCleanBuildUpdateSite">
+      Update site for RefrehCleanBuildUpdate plugin
+   </description>
+   <feature url="features/com.github.putpixel.refrehcleanbuild.feature_1.0.0.qualifier.jar" id="com.github.putpixel.refrehcleanbuild.feature" version="1.0.0.qualifier"/>
+</site>

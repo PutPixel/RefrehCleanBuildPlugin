@@ -2,7 +2,7 @@
 <feature
       id="com.github.putpixel.refrehcleanbuild.feature"
       label="RefrehCleanBuildFeature"
-      version="1.0.0.qualifier">
+      version="1.0.1.qualifier">
 
    <description url="https://github.com/PutPixel/RefrehCleanBuildPlugin">
       If you suffer from &apos;The project was not built due to &quot;Could not delete...&quot; Fix the problem, then try refreshing this project and building it since it may be inconsistent&apos;, then this plugin does all work for you.
@@ -15,7 +15,7 @@ If any other error exists then plugin shows warning.
          id="com.github.putpixel.refrehcleanbuild"
          download-size="0"
          install-size="0"
-         version="0.0.0"
+         version="1.0.1.qualifier"
          unpack="false"/>
 
 </feature>

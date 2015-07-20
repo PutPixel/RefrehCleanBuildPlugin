@@ -3,5 +3,5 @@
    <description name="RefrehCleanBuildUpdateSite">
       Update site for RefrehCleanBuildUpdate plugin
    </description>
-   <feature url="features/com.github.putpixel.refrehcleanbuild.feature_1.0.1.201507171302.jar" id="com.github.putpixel.refrehcleanbuild.feature" version="1.0.1.201507171302"/>
+   <feature url="features/com.github.putpixel.refrehcleanbuild.feature_1.0.1.201507201136.jar" id="com.github.putpixel.refrehcleanbuild.feature" version="1.0.1.201507201136"/>
 </site>

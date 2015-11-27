@@ -21,6 +21,12 @@
                   label="Refresh Clean"
                   style="push">
             </command>
+            <command
+                  commandId="com.github.putpixel.refrehbuild.run.btn.command"
+                  icon="icons/iconRB16.png"
+                  label="Refresh Build"
+                  style="push">
+            </command>
          </toolbar>
       </menuContribution>
    </extension>
@@ -35,6 +41,11 @@
             defaultHandler="com.github.putpixel.refrehcleanbuild.RefreshCleanCommand"
             id="com.github.putpixel.refrehclean.run.btn.command"
             name="Refresh Clean">
+      </command>
+      <command
+            defaultHandler="com.github.putpixel.refrehcleanbuild.RefreshBuildCommand"
+            id="com.github.putpixel.refrehbuild.run.btn.command"
+            name="Refresh Build">
       </command>
    </extension>
 

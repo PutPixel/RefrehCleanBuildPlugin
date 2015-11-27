@@ -66,7 +66,7 @@ public class RefreshCleanBuildCommand extends AbstractHandler {
         return "Refresh Clean Build";
     }
 
-    private void refreshAll(IProgressMonitor monitor) {
+    protected void refreshAll(IProgressMonitor monitor) {
         try {
             ResourcesPlugin.getWorkspace().getRoot().refreshLocal(IResource.DEPTH_INFINITE, monitor);
         } catch (CoreException e) {
@@ -82,7 +82,7 @@ public class RefreshCleanBuildCommand extends AbstractHandler {
         }
     }
 
-    private void cleanAll(IProgressMonitor monitor) {
+    protected void cleanAll(IProgressMonitor monitor) {
         try {
             ResourcesPlugin.getWorkspace().build(IncrementalProjectBuilder.CLEAN_BUILD, monitor);
         } catch (CoreException e) {

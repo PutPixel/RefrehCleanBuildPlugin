@@ -6,3 +6,6 @@ Or have to do refresh - clean - build after each update from repository, then th
 
 It automatically refreshes and clean entire workspace until error specified above exists and then builds workspace.
 If any other error exists then plugin shows error.
+
+
+Update site to install plugin: https://raw.githubusercontent.com/PutPixel/RefrehCleanBuildPlugin/master/RefrehCleanBuildUpdateSite/site.xml

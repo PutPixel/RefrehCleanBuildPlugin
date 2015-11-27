@@ -13,4 +13,11 @@ It automatically refreshes and clean entire workspace until error specified abov
 If any other error exists then plugin shows error.
    </description>
 
+   <plugin
+         id="com.github.putpixel.refrehcleanbuild"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
 </feature>
